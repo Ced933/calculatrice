@@ -1,4 +1,5 @@
 
+// Excercices
 function reverse(word){
     console.log(word)
     let array = word.split('').reverse().join('');
@@ -28,6 +29,8 @@ for(let i = 0; i < array.length; i++){
     }
 console.log(largestword)
 }
+
+// calculatrice 
 
 let screen = document.querySelector("#screen");
 let pScreen = document.querySelector("#screen-p");
@@ -131,3 +134,7 @@ equal.addEventListener('click', ()=>{
     p.textContent = calcul;
 })
 
+// Error 
+window.addEventListener('error', (e) =>{
+    alert('Vous avez commit une erreur :' + e.message)
+})
